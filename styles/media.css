@@ -1,0 +1,51 @@
+/* ———————————————————————————————————————————————— */
+/*  === === === === === MEDIA === === === === ===   */
+/* ———————————————————————————————————————————————— */
+@media screen and (max-width: 1201px) {
+  main {
+    .content__wrapper {
+      padding:
+        var(--main-wrapper-top-margin)
+        var(--main-wrapper-right-margin)
+        var(--main-wrapper-bottom-margin)
+        var(--main-wrapper-left-margin);
+    }
+  }
+}
+@media screen and (max-width: 1242px) and (min-width: 832px) {
+  .models-cards {
+    margin: 0 auto;
+    max-width: 766px;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 414px) {
+  .container__image {
+    max-width: 338px;
+  }
+}
+@media screen and (max-width: 398px) {
+  .container__image {
+    max-width: 315px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .container__image {
+    max-width: 298px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .container__title, .container__text {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 340px) {
+  .container__image {
+    max-width: 230px;
+  }
+}
+@media print {
+  html {
+    filter: saturate(0);
+  }
+}
