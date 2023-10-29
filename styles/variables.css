@@ -1,0 +1,97 @@
+/* —————————————————————————————————————————————————— */
+/* === === === === === VARIABLES === === === === ===  */
+/* —————————————————————————————————————————————————— */
+:root {
+  --none: none;
+  --cur-text: text;
+  --cur-pointer: pointer;
+  --transparent: transparent;
+  --box-sizing: border-box;
+  --overflow-x: hidden;
+  --overflow-y: var(--none);
+  --100-percent: 100%;
+  --100dvw: 100dvw;
+  --100dvh: 100dvh;
+}
+:root {
+  --white: hsl(0, 0%, 100%);
+  --white-95: hsl(0, 0%, 95%);
+  --text-gray: hsl(225, 11%, 67%);
+  --light-color: hsl(223, 13%, 91%);
+  --light-color-40: hsla(223, 13%, 91%, .4);
+  --dark-color: hsl(225, 2%, 40%);
+  --dark-color-40: hsla(225, 2%, 40%, .4);
+  --black: hsl(223, 32%, 10%);
+  --true-black: hsl(0, 0%, 0%);
+}
+:root {
+  --main-fg: var(--black);
+  --main-bg: var(--white-95);
+  --header-fg: var(--true-black);
+  --header-bg: var(--white);
+  --header-link-fg: var(--true-black);
+  --header-link-bg: var(--none);
+  --footer-fg: var(--text-gray);
+  --footer-bg: var(--black);
+  --footer-link-fg: var(--white);
+  --footer-link-bg: var(--none);
+  --link-fg: var(--true-black);
+  --link-bg: var(--none);
+  --link-fg-hover: var(--black);
+  --link-decoration: var(--none);
+  --sep-color: var(--light-color-40);
+}
+:root {
+  --scrollbar-fg: var(--dark-color-40);
+  --scrollbar-bg: var(--transparent);
+  --scrollbar-gutter: stable;
+  --scroll-behavior: smooth;
+  --webkit-overflow-scrolling: touch;
+  --overscroll-behavior: var(--none);
+  --scroll-margin-block-start: calc(env(safe-area-inset-top, 0) + 1.15rem);
+  --scrollbar-width: thin;
+}
+:root {
+  --max-content-width: 1161px;
+  --primary-gap-scale: 24px;
+  --header-min-height: 76px;
+  --header-max-height: 110px;
+  --header-wrapper-padding: 20px;
+  --main-wrapper-left-padding: 20px;
+  --main-wrapper-right-padding: 20px;
+  --main-wrapper-top-margin: 25px;
+  --main-wrapper-right-margin: auto;
+  --main-wrapper-bottom-margin: 25px;
+  --main-wrapper-left-margin: auto;
+  --model-container-radius: 12px;
+  --model-container-width: var(--100-percent);
+  --model-container-max-width: 371px;
+  --model-container-img-max-width: 371px;
+  --model-container-img-max-height: 254px;
+  --footer-wrapper-top-padding: 32px;
+  --footer-wrapper-left-padding: 20px;
+  --footer-wrapper-right-padding: 20px;
+  --footer-wrapper-bottom-padding: 20px;
+}
+:root {
+  --fallback-font: JetBrains Mono, Fira Code, Fira Mono, Monaco, Helvetica Neue, Roboto Mono, BlinkMacSystemFont, Roboto, Consolas, Oxygen, Ubuntu, Cantarell, Droid Sans, Arial, Segoe UI, system-ui, -apple-system, monospace, sans-serif, serif;
+  --primary-font: Anonymous Pro, var(--fallback-font);
+  --secondary-font: IBM Plex Mono, var(--primary-font), var(--fallback-font);
+  --primary-font-size: 20px;
+  --primary-font-ligatures: var(--none);
+  --primary-font-style: normal;
+  --primary-font-weight: 700;
+  --moz-osx-font-smoothing: grayscale;
+  --webkit-font-smoothing: antialiased;
+  --webkit-text-size-adjust: var(--none);
+  --moz-text-size-adjust: var(--none);
+  --text-size-adjust: var(--none);
+}
+:root {
+  --header-logo-desktop-font-size: 42px;
+  --footer-logo-desktop-font-size: 32px;
+  --header-logo-mobile-font-size: 30px;
+  --footer-logo-mobile-font-size: var(--footer-logo-desktop-font-size);
+  --heading-desktop-font-size: 48px;
+  --heading-mobile-font-size: 24px;
+}

@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url("AnonymousPro-Italic.eot");
+  src: local("Anonymous Pro Italic"), local("AnonymousPro-Italic"),
+  url("AnonymousPro-Italic.eot?#iefix") format("embedded-opentype"),
+  url("AnonymousPro-Italic.woff2") format("woff2"),
+  url("AnonymousPro-Italic.woff") format("woff"),
+  url("AnonymousPro-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url("AnonymousPro-Regular.eot");
+  src: local("Anonymous Pro Regular"), local("AnonymousPro-Regular"),
+  url("AnonymousPro-Regular.eot?#iefix") format("embedded-opentype"),
+  url("AnonymousPro-Regular.woff2") format("woff2"),
+  url("AnonymousPro-Regular.woff") format("woff"),
+  url("AnonymousPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url("AnonymousPro-BoldItalic.eot");
+  src: local("Anonymous Pro Bold Italic"), local("AnonymousPro-BoldItalic"),
+  url("AnonymousPro-BoldItalic.eot?#iefix") format("embedded-opentype"),
+  url("AnonymousPro-BoldItalic.woff2") format("woff2"),
+  url("AnonymousPro-BoldItalic.woff") format("woff"),
+  url("AnonymousPro-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url("AnonymousPro-Bold.eot");
+  src: local("Anonymous Pro Bold"), local("AnonymousPro-Bold"),
+  url("AnonymousPro-Bold.eot?#iefix") format("embedded-opentype"),
+  url("AnonymousPro-Bold.woff2") format("woff2"),
+  url("AnonymousPro-Bold.woff") format("woff"),
+  url("AnonymousPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
