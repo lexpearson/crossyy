@@ -1,0 +1,79 @@
+/* ———————————————————————————————————————————————— */
+/* === === === === === GLOBALS === === === === ===  */
+/* ———————————————————————————————————————————————— */
+html {
+  scroll-margin-block-start: var(--scroll-margin-block-start);
+  -webkit-overflow-scrolling: var(--webkit-overflow-scrolling);
+  -moz-osx-font-smoothing: var(--moz-osx-font-smoothing);
+  -webkit-font-smoothing: var(--webkit-font-smoothing);
+}
+*, body {
+  margin: 0;
+  padding: 0;
+  
+  overflow-x: var(--overflow-x);
+  overflow-y: var(--overflow-y);
+  
+  -webkit-box-sizing: var(--box-sizing);
+  box-sizing: var(--box-sizing);
+  
+  scroll-behavior: var(--scroll-behavior);
+  overscroll-behavior: var(--overscroll-behavior);
+  scrollbar-gutter: var(--scrollbar-gutter);
+  
+  scrollbar-color: var(--scrollbar-fg) var(--scrollbar-bg);
+  scrollbar-width: var(--scrollbar-width);
+  
+  -webkit-font-smoothing: var(--webkit-font-smoothing);
+  -webkit-text-size-adjust: var(--webkit-text-size-adjust);
+  -moz-text-size-adjust: var(--moz-text-size-adjust);
+  text-size-adjust: var(--text-size-adjust);
+  
+  font-weight: var(--primary-font-weight);
+  font-family: var(--primary-font);
+  font-size: var(--primary-font-size);
+  font-variant-ligatures: var(--primary-font-ligatures);
+  font-style: var(--primary-font-style);
+}
+body {
+  width: var(--100dvw);
+  height: var(--100dvh);
+  padding: env(safe-area-inset-top, 0) env(safe-area-inset-right, 0) env(safe-area-inset-bottom, 0) env(safe-area-inset-left, 0);
+  color: var(--main-fg);
+  background: var(--main-bg);
+}
+img {
+  -ms-touch-action: var(--none);
+  touch-action: var(--none);
+  
+  -webkit-user-select: var(--none);
+  -khtml-user-select: var(--none);
+  -moz-user-select: var(--none);
+  -ms-user-select: var(--none);
+  user-select: var(--none);
+}
+a {
+  color: var(--link-fg);
+  background: var(--link-bg);
+  text-decoration: var(--link-decoration);
+  
+  cursor: var(--cur-pointer);
+  
+  &:hover {
+    color: var(--link-fg-hover);
+  }
+}
+hr {
+  width: var(--100-percent);
+  height: 1px;
+  
+  border: var(--none);
+  outline: var(--none);
+  
+  background: var(--sep-color);
+}
+h1, h2, h3, h4, h5, h6, .section-heading {
+  font-weight: 500;
+  font-style: normal;
+  font-family: var(--secondary-font);
+}

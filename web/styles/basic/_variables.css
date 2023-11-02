@@ -55,23 +55,24 @@
   --max-content-width: 1161px;
   --primary-gap-scale: 24px;
   --header-min-height: 76px;
-  --header-max-height: 110px;
-  --header-wrapper-padding: 20px;
+  --header-wrapper-top-padding: 24px;
+  --header-wrapper-right-padding: 24px;
+  --header-wrapper-bottom-padding: 24px;
+  --header-wrapper-left-padding: 24px;
   --main-wrapper-left-padding: 20px;
   --main-wrapper-right-padding: 20px;
-  --main-wrapper-top-margin: 25px;
+  --main-wrapper-top-margin: 32px;
   --main-wrapper-right-margin: auto;
-  --main-wrapper-bottom-margin: 25px;
+  --main-wrapper-bottom-margin: 32px;
   --main-wrapper-left-margin: auto;
   --model-container-radius: 12px;
   --model-container-width: var(--100-percent);
   --model-container-max-width: 371px;
-  --model-container-img-max-width: 371px;
-  --model-container-img-max-height: 254px;
+  --sneakers-container-min-width: calc(var(--model-container-max-width) - 24px);
   --footer-wrapper-top-padding: 32px;
-  --footer-wrapper-left-padding: 20px;
-  --footer-wrapper-right-padding: 20px;
-  --footer-wrapper-bottom-padding: 20px;
+  --footer-wrapper-left-padding: 24px;
+  --footer-wrapper-bottom-padding: 24px;
+  --footer-wrapper-right-padding: 24px;
 }
 :root {
   --fallback-font: JetBrains Mono, Fira Code, Fira Mono, Monaco, Helvetica Neue, Roboto Mono, BlinkMacSystemFont, Roboto, Consolas, Oxygen, Ubuntu, Cantarell, Droid Sans, Arial, Segoe UI, system-ui, -apple-system, monospace, sans-serif, serif;
@@ -93,5 +94,5 @@
   --header-logo-mobile-font-size: 30px;
   --footer-logo-mobile-font-size: var(--footer-logo-desktop-font-size);
   --heading-desktop-font-size: 48px;
-  --heading-mobile-font-size: 24px;
+  --heading-mobile-font-size: 26px;
 }

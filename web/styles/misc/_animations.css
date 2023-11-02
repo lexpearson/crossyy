@@ -1,13 +1,20 @@
 /* ———————————————————————————————————————————————— */
-/* === === === === === IMPORTS === === === === ===  */
+/*    === === === === ANIMATION === === === ===     */
 /* ———————————————————————————————————————————————— */
-@import "misc/_animations.css";
-
-@import "basic/_variables.css";
-@import "basic/_globals.css";
-
-@import "components/_footer.css";
-@import "components/_main.css";
-@import "components/_header.css";
-
-@import "misc/_media.css";
+@keyframes pulse-light-theme {
+  0% {
+    opacity: 1;
+  }
+  5% {
+    opacity: .91;
+  }
+  50% {
+    opacity: .52;
+  }
+  95% {
+    opacity: .925;
+  }
+  100% {
+    opacity: 1;
+  }
+}
