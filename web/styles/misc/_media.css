@@ -25,6 +25,8 @@
     --header-wrapper-right-padding: calc(var(--primary-gap-scale) / 100 * 133);
     --header-wrapper-bottom-padding: var(--primary-gap-scale);
     --header-wrapper-left-padding: calc(var(--primary-gap-scale) / 100 * 133);
+    --main-wrapper-right-padding: calc(var(--primary-gap-scale) / 100 * 133);
+    --main-wrapper-left-padding: calc(var(--primary-gap-scale) / 100 * 133);
     --footer-wrapper-top-padding: calc(var(--primary-gap-scale) / 100 * 133);
     --footer-wrapper-left-padding: calc(var(--primary-gap-scale) / 100 * 133);
     --footer-wrapper-bottom-padding: var(--primary-gap-scale);
@@ -47,6 +49,8 @@
     --header-wrapper-right-padding: var(--primary-gap-scale);
     --header-wrapper-bottom-padding: var(--primary-gap-scale);
     --header-wrapper-left-padding: var(--primary-gap-scale);
+    --main-wrapper-right-padding: var(--primary-gap-scale);
+    --main-wrapper-left-padding: var(--primary-gap-scale);
     --footer-wrapper-top-padding: calc(var(--primary-gap-scale) / 100 * 133);
     --footer-wrapper-left-padding: var(--primary-gap-scale);
     --footer-wrapper-right-padding: var(--primary-gap-scale);
@@ -92,6 +96,8 @@
     --header-wrapper-right-padding: calc(var(--primary-gap-scale) / 100 * 66);
     --header-wrapper-bottom-padding: var(--primary-gap-scale);
     --header-wrapper-left-padding: calc(var(--primary-gap-scale) / 100 * 66);
+    --main-wrapper-right-padding: calc(var(--primary-gap-scale) / 100 * 66);
+    --main-wrapper-left-padding: calc(var(--primary-gap-scale) / 100 * 66);
     --footer-wrapper-top-padding: calc(var(--primary-gap-scale) / 100 * 133);
     --footer-wrapper-left-padding: calc(var(--primary-gap-scale) / 100 * 66);
     --footer-wrapper-bottom-padding: var(--primary-gap-scale);
