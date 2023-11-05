@@ -73,7 +73,6 @@ hr {
   background: var(--sep-color);
 }
 h1, h2, h3, h4, h5, h6, .section-heading {
-  font-weight: 500;
   font-style: normal;
-  font-family: var(--secondary-font);
+  font-weight: 700;
 }

@@ -77,7 +77,6 @@
 :root {
   --fallback-font: JetBrains Mono, Fira Code, Fira Mono, Monaco, Helvetica Neue, Roboto Mono, BlinkMacSystemFont, Roboto, Consolas, Oxygen, Ubuntu, Cantarell, Droid Sans, Arial, Segoe UI, system-ui, -apple-system, monospace, sans-serif, serif;
   --primary-font: Anonymous Pro, var(--fallback-font);
-  --secondary-font: IBM Plex Mono, var(--primary-font), var(--fallback-font);
   --primary-font-size: 20px;
   --primary-font-ligatures: var(--none);
   --primary-font-style: normal;
