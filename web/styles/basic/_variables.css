@@ -18,9 +18,9 @@
   --white-95: hsl(0, 0%, 95%);
   --text-gray: hsl(225, 11%, 67%);
   --light-color: hsl(223, 13%, 91%);
-  --light-color-40: hsla(223, 13%, 91%, .4);
+  --light-color-40: hsla(223, 13%, 91%, 0.4);
   --dark-color: hsl(225, 2%, 40%);
-  --dark-color-40: hsla(225, 2%, 40%, .4);
+  --dark-color-40: hsla(225, 2%, 40%, 0.4);
   --black: hsl(223, 32%, 10%);
   --true-black: hsl(0, 0%, 0%);
 }
@@ -68,14 +68,17 @@
   --model-container-radius: 12px;
   --model-container-width: var(--100-percent);
   --model-container-max-width: 371px;
-  --sneakers-container-min-width: calc(var(--model-container-max-width) - 24px);
+  --sneakers-container-min-width: 364px;
   --footer-wrapper-top-padding: 32px;
   --footer-wrapper-left-padding: 24px;
   --footer-wrapper-bottom-padding: 24px;
   --footer-wrapper-right-padding: 24px;
 }
 :root {
-  --fallback-font: JetBrains Mono, Fira Code, Fira Mono, Monaco, Helvetica Neue, Roboto Mono, BlinkMacSystemFont, Roboto, Consolas, Oxygen, Ubuntu, Cantarell, Droid Sans, Arial, Segoe UI, system-ui, -apple-system, monospace, sans-serif, serif;
+  --fallback-font: JetBrains Mono, Fira Code, Fira Mono, Monaco, Helvetica Neue,
+    Roboto Mono, BlinkMacSystemFont, Roboto, Consolas, Oxygen, Ubuntu, Cantarell,
+    Droid Sans, Arial, Segoe UI, system-ui, -apple-system, monospace, sans-serif,
+    serif;
   --primary-font: Anonymous Pro, var(--fallback-font);
   --primary-font-size: 20px;
   --primary-font-ligatures: var(--none);
@@ -93,5 +96,5 @@
   --header-logo-mobile-font-size: 30px;
   --footer-logo-mobile-font-size: var(--footer-logo-desktop-font-size);
   --heading-desktop-font-size: 48px;
-  --heading-mobile-font-size: 26px;
+  --heading-mobile-font-size: 32px;
 }

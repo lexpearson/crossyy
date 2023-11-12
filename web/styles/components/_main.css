@@ -4,10 +4,10 @@
 .content-wrapper {
   display: flex;
   margin: 0 auto;
-  
+
   max-width: var(--max-content-width);
   background: var(--none);
-  
+
   &.justify-center {
     justify-content: center;
   }
@@ -17,104 +17,125 @@
 }
 main {
   width: var(--100-percent);
-  
+
   .content-wrapper {
     flex-direction: column;
-    
-    max-width: calc(var(--max-content-width) + (var(--main-wrapper-left-padding) * 2));
-    padding: 0 var(--main-wrapper-right-padding) 0 var(--main-wrapper-left-padding);
-    margin:
-      var(--main-wrapper-top-margin)
-      var(--main-wrapper-right-margin)
-      var(--main-wrapper-bottom-margin)
-      var(--main-wrapper-left-margin);
-    
+
+    max-width: calc(
+      var(--max-content-width) + (var(--main-wrapper-left-padding) * 2)
+    );
+    padding: 0 var(--main-wrapper-right-padding) 0
+      var(--main-wrapper-left-padding);
+    margin: var(--main-wrapper-top-margin) var(--main-wrapper-right-margin)
+      var(--main-wrapper-bottom-margin) var(--main-wrapper-left-margin);
+
     & section {
       display: flex;
       flex-direction: column;
+      overflow: visible;
       &:not(:is(.sneaker-big), :is(.sneaker__similar)) {
-        gap: var(--primary-gap-scale)
+        gap: 32px;
       }
     }
   }
 }
-.section__heading {
-  margin-bottom: 6px;
+.section__heading,
+.sneaker__similar-title {
+  font-size: clamp(
+    var(--heading-mobile-font-size),
+    6dvw,
+    var(--heading-desktop-font-size)
+  );
 }
-.section__heading, .sneaker__similar-title {
-  font-size: clamp(var(--heading-mobile-font-size), 6dvw, var(--heading-desktop-font-size));
-}
-.models-cards, .sneaker__similar-sneaker {
+.sneakers-catalog,
+.sneaker__similar-sneaker {
   display: flex;
-  
+
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: flex-start;
-  
+
   scrollbar-width: var(--none);
   gap: var(--primary-gap-scale);
+  overflow: visible;
 }
-.models-cards {
+.sneakers-catalog {
   justify-content: center;
 }
-.container {
-  display: block;
+.sneaker {
+  display: flex;
+  flex-direction: column;
+
   min-width: 250px;
   max-width: var(--model-container-max-width);
-  height: max-content;
-  
+
   background: var(--white);
   border-radius: var(--model-container-radius);
-  
+
   overflow: hidden;
   cursor: var(--cur-pointer);
-  
-  &:hover .container__title, &:hover .container__text {
-    animation: pulse-light-theme .985s ease-in infinite;
+  transition:
+    box-shadow 325ms ease-out,
+    transform 325ms ease-out;
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  &:where(.sneaker__title, .sneaker__text):hover {
+    animation: pulse-light-theme 0.985s ease-in infinite;
   }
 }
-.container__image {
+.sneaker__image {
   display: flex;
   margin: auto;
-  
+
   width: var(--100-percent);
   height: auto;
-  
+
   object-fit: contain;
-  
+
   background: var(--none);
   transition:
-    max-width .5s ease-out,
-    max-height .5s ease-out,
-    margin .5s ease-out;
+    width 0.5s ease-out,
+    height 0.5s ease-out,
+    margin 0.5s ease-out;
 }
-.container__title {
-  margin: 32px var(--primary-gap-scale) 10px;
-  
+.sneaker__details {
+  display: flex;
+
+  justify-content: center;
+  flex-direction: column;
+
+  margin: 32px var(--primary-gap-scale);
+  gap: 12px;
+}
+.sneaker__title {
   font-size: clamp(17.5px, 5.8dvw, 25.5px);
   font-weight: 700;
-  
+  text-align: left;
+
   animation: var(--none);
-  
-  &::first-letter {
-    text-transform: uppercase;
-  }
+  transition:
+    font-size 0.485s ease-out,
+    line-height 0.485s ease-out;
 }
-.container__text {
-  margin: 0 var(--primary-gap-scale) 32px;
-  
+.sneaker__text {
   font-size: clamp(15.5px, 5.8dvw, 20px);
   font-weight: 400;
-  
-  &::first-letter {
-    text-transform: uppercase;
-  }
+  text-align: left;
+
+  transition:
+    font-size 0.485s ease-out,
+    line-height 0.485s ease-out;
 }
-
-
+:where(.sneaker__title, .sneaker__text)::first-letter {
+  text-transform: uppercase;
+}
 .sneaker-big {
-  padding: clamp(24px, 4.8dvw, 48px);
-  border-radius: clamp(32px, 4.8dvw, 50px);
+  padding: clamp(var(--primary-gap-scale), 4.8dvw, 48px);
+  border-radius: clamp(12px, 2dvw, 50px);
   background: var(--white);
 }
 .sneaker-big__img {
@@ -131,8 +152,9 @@ main {
   font-weight: 400;
   font-size: clamp(20px, 4.8dvw, 36px);
 }
-.sneaker-big__title, .sneaker-big__subtitle {
-  margin-bottom: 24px;
+.sneaker-big__title,
+.sneaker-big__subtitle {
+  margin-bottom: var(--primary-gap-scale);
 }
 .sneaker-big__additional-info {
   display: flex;
@@ -140,7 +162,8 @@ main {
   flex-direction: row;
   gap: 32px;
 }
-.sneaker-big__details, .sneaker-big__parameters {
+.sneaker-big__details,
+.sneaker-big__parameters {
   flex: 1 0 0;
 }
 .sneaker-big__details {
@@ -153,49 +176,49 @@ main {
   font-size: clamp(16px, 4.8dvw, 20px);
   font-weight: 400;
   font-style: normal;
-  
+
   text-align: left;
   line-height: 140%;
   word-wrap: break-word;
-  
+
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .sneaker-big__parameters {
-  width: 100%;
+  width: var(--100-percent);
 }
 .sneaker-big__parameters-title {
   display: block;
   padding-left: 1px;
   margin-bottom: 20px;
-  
+
   font-size: 30px;
   font-family: var(--primary-font);
   font-weight: 400;
-  
-  user-select: none;
-  touch-action: none;
+
+  user-select: var(--none);
+  touch-action: var(--none);
 }
 .sneaker-big__parameter-info {
   display: flex;
-  margin: 24px 0;
-  
+  margin: var(--primary-gap-scale) 0;
+
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 .sneaker-big__parameter-title {
   display: inline-block;
-  
-  user-select: none;
-  touch-action: none;
+
+  user-select: var(--none);
+  touch-action: var(--none);
 }
 .sneaker-big__parameter-value {
   display: inline-block;
   margin-left: auto;
-  padding-left: 24px;
-  
+  padding-left: var(--primary-gap-scale);
+
   &.retail-price {
     &::after {
       content: "\20AC";
@@ -206,14 +229,17 @@ main {
     }
   }
 }
-.sneaker-big__parameter-title, .sneaker-big__parameter-value {
+.sneaker-big__parameter-title,
+.sneaker-big__parameter-value {
   font-weight: 400;
   font-size: 20px;
 }
 .sneaker-big__parameter-sep {
   display: block;
+
   width: var(--100-percent);
   height: 1px;
+
   background: var(--black);
 }
 .sneaker__similar {
@@ -228,13 +254,12 @@ main {
 }
 .sneaker__similar-sneakers {
   display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  
-  overflow: scroll;
-  gap: 24px;
-  
-  & .container {
+  flex-wrap: wrap;
+  gap: var(--primary-gap-scale);
+  overflow: visible;
+
+  & .sneaker {
     min-width: var(--sneakers-container-min-width);
+    height: unset;
   }
 }
