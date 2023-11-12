@@ -4,30 +4,31 @@
 header {
   width: var(--100-percent);
   min-height: var(--header-min-height);
-  
+
   white-space: nowrap;
-  
+
   color: var(--header-fg);
   background: var(--header-bg);
   border-bottom: 1px solid var(--text-gray);
-  
+
   overflow: hidden;
-  
+
   .content-wrapper {
     flex-direction: row;
-    
-    max-width: calc(var(--max-content-width) + (var(--header-wrapper-left-padding) * 2));
-    padding:
-      var(--header-wrapper-top-padding)
-      var(--header-wrapper-right-padding)
-      var(--header-wrapper-bottom-padding)
+
+    max-width: calc(
+      var(--max-content-width) + (var(--header-wrapper-left-padding) * 2)
+    );
+    padding: var(--header-wrapper-top-padding)
+      var(--header-wrapper-right-padding) var(--header-wrapper-bottom-padding)
       var(--header-wrapper-left-padding);
   }
 }
 .logo {
   touch-action: var(--none);
   user-select: var(--none);
-  
+  cursor: pointer;
+
   &.header {
     width: 215px;
     height: 64px;
@@ -48,17 +49,17 @@ header {
 }
 .socials__list {
   display: flex;
-  
+
   flex-direction: row;
   flex-wrap: nowrap;
-  
+
   column-gap: var(--primary-gap-scale);
   list-style: var(--none);
   overflow: visible;
 }
 .socials__link {
   font-size: clamp(16px, 3dvw, var(--primary-font-size));
-  
+
   &.telegram {
     &::before {
       content: "💬 ";
