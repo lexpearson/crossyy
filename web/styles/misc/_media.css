@@ -18,22 +18,8 @@
 @media screen and (max-width: 1242px) and (min-width: 805px) {
   .sneakers-catalog {
     margin: 0 auto;
-    max-width: 766px;
+    max-width: 768px;
     justify-content: flex-start;
-  }
-}
-@media screen and (max-width: 960px) {
-  :root {
-    --header-wrapper-top-padding: var(--primary-gap-scale);
-    --header-wrapper-right-padding: calc(var(--primary-gap-scale) / 100 * 133);
-    --header-wrapper-bottom-padding: var(--primary-gap-scale);
-    --header-wrapper-left-padding: calc(var(--primary-gap-scale) / 100 * 133);
-    --main-wrapper-right-padding: calc(var(--primary-gap-scale) / 100 * 133);
-    --main-wrapper-left-padding: calc(var(--primary-gap-scale) / 100 * 133);
-    --footer-wrapper-top-padding: calc(var(--primary-gap-scale) / 100 * 133);
-    --footer-wrapper-left-padding: calc(var(--primary-gap-scale) / 100 * 133);
-    --footer-wrapper-bottom-padding: var(--primary-gap-scale);
-    --footer-wrapper-right-padding: calc(var(--primary-gap-scale) / 100 * 133);
   }
 }
 @media screen and (max-width: 830px) {
@@ -56,18 +42,6 @@
   }
 }
 @media screen and (max-width: 720px) {
-  :root {
-    --header-wrapper-top-padding: var(--primary-gap-scale);
-    --header-wrapper-right-padding: var(--primary-gap-scale);
-    --header-wrapper-bottom-padding: var(--primary-gap-scale);
-    --header-wrapper-left-padding: var(--primary-gap-scale);
-    --main-wrapper-right-padding: var(--primary-gap-scale);
-    --main-wrapper-left-padding: var(--primary-gap-scale);
-    --footer-wrapper-top-padding: calc(var(--primary-gap-scale) / 100 * 133);
-    --footer-wrapper-left-padding: var(--primary-gap-scale);
-    --footer-wrapper-right-padding: var(--primary-gap-scale);
-    --footer-wrapper-bottom-padding: var(--primary-gap-scale);
-  }
   header {
     & .content-wrapper {
       display: flex;
