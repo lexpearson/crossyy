@@ -1,6 +1,14 @@
 /* ———————————————————————————————————————————————— */
 /*  === === === === === MEDIA === === === === ===   */
 /* ———————————————————————————————————————————————— */
+@media screen and (min-height: 1642px) {
+  footer {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+  }
+}
 @media screen and (max-width: 1201px) {
   main .content__wrapper {
     padding: var(--main-wrapper-top-margin) var(--main-wrapper-right-margin)

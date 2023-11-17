@@ -6,6 +6,7 @@ footer {
   white-space: nowrap;
   color: var(--footer-fg);
   background: var(--footer-bg);
+  overflow: visible;
 }
 footer .content-wrapper {
   flex-direction: column;
