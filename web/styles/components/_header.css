@@ -8,12 +8,12 @@ header {
   color: var(--header-fg);
   background: var(--header-bg);
   border-bottom: 1px solid var(--text-gray);
-  overflow: hidden;
+  overflow: visi;
 }
 header .content-wrapper {
   flex-direction: row;
   max-width: calc(
-    var(--max-content-width) + (var(--header-wrapper-left-padding) * 2)
+    var(--max-content-width) + (var(--header-wrapper-left-padding) + var(--header-wrapper-right-padding))
   );
   padding: var(--header-wrapper-top-padding) var(--header-wrapper-right-padding)
     var(--header-wrapper-bottom-padding) var(--header-wrapper-left-padding);
