@@ -56,13 +56,12 @@ img {
 a {
   color: var(--link-fg);
   background: var(--link-bg);
+  
   text-decoration: var(--link-decoration);
-
   cursor: var(--cur-pointer);
-
-  &:hover {
-    color: var(--link-fg-hover);
-  }
+}
+a:hover {
+  color: var(--link-fg-hover);
 }
 hr {
   width: var(--100-percent);
