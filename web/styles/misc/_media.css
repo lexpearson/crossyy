@@ -2,11 +2,9 @@
 /*  === === === === === MEDIA === === === === ===   */
 /* ———————————————————————————————————————————————— */
 @media screen and (max-width: 1201px) {
-  main {
-    .content__wrapper {
-      padding: var(--main-wrapper-top-margin) var(--main-wrapper-right-margin)
-        var(--main-wrapper-bottom-margin) var(--main-wrapper-left-margin);
-    }
+  main .content__wrapper {
+    padding: var(--main-wrapper-top-margin) var(--main-wrapper-right-margin)
+      var(--main-wrapper-bottom-margin) var(--main-wrapper-left-margin);
   }
 }
 @media screen and (max-width: 1242px) and (min-width: 830px) {
@@ -42,17 +40,14 @@
   }
 }
 @media screen and (max-width: 720px) {
-  header {
-    & .content-wrapper {
-      display: flex;
-      flex-direction: column;
-      gap: var(--primary-gap-scale);
-    }
+  header .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--primary-gap-scale);
   }
-  .logo {
-    &:where(.header, .footer) {
-      margin: auto;
-    }
+  .logo.header,
+  .logo.footer {
+    margin: auto;
   }
   .socials {
     margin: auto;
@@ -82,10 +77,9 @@
 @media screen and (max-width: 460px) {
   .sneaker__similar-sneakers {
     flex-wrap: wrap;
-
-    & .sneaker {
-      min-width: unset;
-    }
+  }
+  .sneaker__similar-sneakers .sneaker {
+    min-width: unset;
   }
   .section__heading {
     max-width: unset;
@@ -122,22 +116,19 @@
   }
 }
 [dir="rtl"] {
-  :where(
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6,
-      p,
-      .section-heading,
-      .sneaker__title,
-      .sneaker__text
-    ) {
+  :where(h1, h2, h3, h4, h5, h6, p,
+  .section-heading, .sneaker__title, .sneaker__text) {
     text-align: right;
   }
   .socials {
     margin-left: unset;
     margin-right: auto;
+  }
+}
+@media screen and (max-width: 720px) {
+  [dir="rtl"] {
+    .socials {
+      margin: auto;
+    }
   }
 }

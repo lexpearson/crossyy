@@ -4,40 +4,38 @@
 .content-wrapper {
   display: flex;
   margin: 0 auto;
-
   max-width: var(--max-content-width);
   background: var(--none);
-
-  &.justify-center {
-    justify-content: center;
-  }
-  &.justify-between {
-    justify-content: space-between;
-  }
+}
+.content-wrapper.justify-center {
+  justify-content: center;
+}
+.content-wrapper.justify-between {
+  justify-content: space-between;
 }
 main {
   width: var(--100-percent);
-
-  .content-wrapper {
-    flex-direction: column;
-
-    max-width: calc(
-      var(--max-content-width) + (var(--main-wrapper-left-padding) * 2)
-    );
-    padding: 0 var(--main-wrapper-right-padding) 0
-      var(--main-wrapper-left-padding);
-    margin: var(--main-wrapper-top-margin) var(--main-wrapper-right-margin)
-      var(--main-wrapper-bottom-margin) var(--main-wrapper-left-margin);
-
-    & section {
-      display: flex;
-      flex-direction: column;
-      overflow: visible;
-      &:not(:is(.sneaker-big), :is(.sneaker__similar)) {
-        gap: 32px;
-      }
-    }
-  }
+}
+main .content-wrapper {
+  flex-direction: column;
+  
+  max-width: calc(
+    var(--max-content-width) + (var(--main-wrapper-left-padding) * 2)
+  );
+  
+  padding: 0 var(--main-wrapper-right-padding) 0
+    var(--main-wrapper-left-padding);
+  
+  margin: var(--main-wrapper-top-margin) var(--main-wrapper-right-margin)
+    var(--main-wrapper-bottom-margin) var(--main-wrapper-left-margin);
+}
+main .content-wrapper section {
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+}
+main .content-wrapper section:not(:is(.sneaker-big), :is(.sneaker__similar)) {
+  gap: 32px;
 }
 .section__heading,
 .sneaker__similar-title {
@@ -50,11 +48,9 @@ main {
 .sneakers-catalog,
 .sneaker__similar-sneaker {
   display: flex;
-
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: flex-start;
-
   scrollbar-width: var(--none);
   gap: var(--primary-gap-scale);
   overflow: visible;
@@ -65,38 +61,36 @@ main {
 .sneaker {
   display: flex;
   flex-direction: column;
-
   min-width: 250px;
   max-width: var(--model-container-max-width);
-
+  
   background: var(--white);
   border-radius: var(--model-container-radius);
-
+  
   overflow: hidden;
+  
   cursor: var(--cur-pointer);
   transition:
     box-shadow 325ms ease-out,
     transform 325ms ease-out;
-
-  &:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  }
-
-  &:where(.sneaker__title, .sneaker__text):hover {
-    animation: pulse-light-theme 0.985s ease-in infinite;
-  }
+}
+.sneaker:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.sneaker:where(.sneaker__title, .sneaker__text):hover {
+  animation: pulse-light-theme 0.985s ease-in infinite;
 }
 .sneaker__image {
   display: flex;
   margin: auto;
-
+  
   width: var(--100-percent);
   height: auto;
-
+  
   object-fit: contain;
-
   background: var(--none);
+  
   transition:
     width 0.5s ease-out,
     height 0.5s ease-out,
@@ -104,10 +98,10 @@ main {
 }
 .sneaker__details {
   display: flex;
-
+  
   justify-content: center;
   flex-direction: column;
-
+  
   margin: 32px var(--primary-gap-scale);
   gap: 12px;
 }
@@ -115,7 +109,7 @@ main {
   font-size: clamp(17.5px, 5.8dvw, 25.5px);
   font-weight: 700;
   text-align: left;
-
+  
   animation: var(--none);
   transition:
     font-size 0.485s ease-out,
@@ -124,8 +118,9 @@ main {
 .sneaker__text {
   font-size: clamp(15.5px, 5.8dvw, 20px);
   font-weight: 400;
+  
   text-align: left;
-
+  
   transition:
     font-size 0.485s ease-out,
     line-height 0.485s ease-out;
@@ -135,12 +130,15 @@ main {
 }
 .sneaker-big {
   padding: clamp(var(--primary-gap-scale), 4.8dvw, 48px);
+  
   border-radius: clamp(12px, 2dvw, 50px);
   background: var(--white);
 }
 .sneaker-big__img {
   display: block;
+  
   margin-bottom: 32px;
+  
   width: var(--100-percent);
   height: auto;
 }
@@ -158,8 +156,10 @@ main {
 }
 .sneaker-big__additional-info {
   display: flex;
+  
   flex-wrap: wrap;
   flex-direction: row;
+  
   gap: 32px;
 }
 .sneaker-big__details,
@@ -168,66 +168,68 @@ main {
 }
 .sneaker-big__details {
   display: flex;
+  
   flex-wrap: wrap;
   flex-direction: column;
+  
   gap: calc((20px / 100) * 140);
 }
 .sneaker-big__details-paragraph {
   font-size: clamp(16px, 4.8dvw, 20px);
   font-weight: 400;
   font-style: normal;
-
+  
   text-align: left;
   line-height: 140%;
   word-wrap: break-word;
-
+  
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 .sneaker-big__parameters {
   width: var(--100-percent);
 }
 .sneaker-big__parameters-title {
   display: block;
+  
   padding-left: 1px;
   margin-bottom: 20px;
-
+  
   font-size: 30px;
   font-family: var(--primary-font);
   font-weight: 400;
-
+  
   user-select: var(--none);
   touch-action: var(--none);
 }
 .sneaker-big__parameter-info {
   display: flex;
   margin: var(--primary-gap-scale) 0;
-
+  
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 .sneaker-big__parameter-title {
   display: inline-block;
-
+  
   user-select: var(--none);
   touch-action: var(--none);
 }
 .sneaker-big__parameter-value {
   display: inline-block;
+  
   margin-left: auto;
   padding-left: var(--primary-gap-scale);
-
-  &.retail-price {
-    &::after {
-      content: "\20AC";
-      display: inline;
-      font-size: inherit;
-      font-weight: inherit;
-      font-style: inherit;
-    }
-  }
+}
+.sneaker-big__parameter-value.retail-price::after {
+  content: "\20AC";
+  
+  display: inline;
+  
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
 }
 .sneaker-big__parameter-title,
 .sneaker-big__parameter-value {
@@ -236,10 +238,10 @@ main {
 }
 .sneaker-big__parameter-sep {
   display: block;
-
+  
   width: var(--100-percent);
   height: 1px;
-
+  
   background: var(--black);
 }
 .sneaker__similar {
@@ -247,19 +249,22 @@ main {
 }
 .sneaker__similar-title {
   display: block;
+  
   margin-top: 48px;
+  
   font-style: normal;
   font-weight: 700;
   font-family: var(--primary-font);
 }
 .sneaker__similar-sneakers {
   display: flex;
+  
   flex-wrap: wrap;
+  
   gap: var(--primary-gap-scale);
   overflow: visible;
-
-  & .sneaker {
-    min-width: var(--sneakers-container-min-width);
-    height: unset;
-  }
+}
+.sneaker__similar-sneakers .sneaker {
+  min-width: var(--sneakers-container-min-width);
+  height: unset;
 }
