@@ -7,7 +7,7 @@
   --cur-pointer: pointer;
   --transparent: transparent;
   --box-sizing: border-box;
-  --overflow-x: hidden;
+  --overflow-x: visible;
   --overflow-y: var(--none);
   --100-percent: 100%;
   --100dvw: 100dvw;
@@ -52,7 +52,7 @@
   --scrollbar-width: thin;
 }
 :root {
-  --max-content-width: 1161px;
+  --max-content-width: 1140px;
   --primary-gap-scale: 24px;
   --header-min-height: 76px;
   --header-wrapper-top-padding: 24px;
@@ -67,7 +67,7 @@
   --main-wrapper-left-margin: auto;
   --model-container-radius: 12px;
   --model-container-width: var(--100-percent);
-  --model-container-max-width: 371px;
+  --model-container-max-width: 364px;
   --sneakers-container-min-width: 364px;
   --footer-wrapper-top-padding: 32px;
   --footer-wrapper-left-padding: 24px;
