@@ -7,7 +7,7 @@
       var(--main-wrapper-bottom-margin) var(--main-wrapper-left-margin);
   }
 }
-@media screen and (max-width: 1242px) and (min-width: 830px) {
+@media screen and (max-width: 1242px) and (min-width: 831px) {
   .section__heading {
     margin: 0 auto;
     transform: translateX(-11%);
@@ -56,13 +56,13 @@
     flex-direction: column;
   }
 }
-@media screen and (max-width: 829px) and (min-width: 460px) {
+@media screen and (max-width: 830px) and (min-width: 460px) {
   .sneaker__similar-title {
     margin-left: auto;
     margin-right: auto;
   }
 }
-@media screen and (max-width: 829px) and (min-width: 535px) {
+@media screen and (max-width: 830px) and (min-width: 535px) {
   .sneaker__similar-title {
     max-width: 50%;
     transform: translateX(clamp(0%, 0.8dvw, -2.5%));
